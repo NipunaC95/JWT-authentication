@@ -19,8 +19,10 @@ app.use(cors());
 //mongodb+srv://Nipuna123:Nipuna@logindatabase-ogpjo.mongodb.net/test
 //database 
 ///mongoose.connect('mongodb://localhost:27017/RAD',{ useNewUrlParser: true },function(err) {
-mongoose.connect('mongodb+srv://Nipuna123:Nipuna@logindatabase-ogpjo.mongodb.net/LoginServer',{ useNewUrlParser: true },function(err) {
-    if (err){
+//mongodb+srv://Nipuna123:Nipuna@logindatabase-ogpjo.mongodb.net/LoginServer?retryWrites=true&w=majority
+    //mongoose.connect('mongodb+srv://Nipuna123:Nipuna@logindatabase-ogpjo.mongodb.net/LoginServer',{ useNewUrlParser: true },function(err) {
+        mongoose.connect('mongodb+srv://Nipuna123:Nipuna@logindatabase-ogpjo.mongodb.net/LoginServer?retryWrites=true&w=majority',{ useNewUrlParser: true },function(err) {
+            if (err){
         console.log("Erroroccured while connecting to the database ! "+ err)
     }
     else{
