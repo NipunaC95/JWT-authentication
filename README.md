@@ -5,13 +5,9 @@
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-
-
 ```sh
 npm i --save
-node server
+node server 
 ```
 
 
@@ -27,11 +23,33 @@ node server
 
 # About JWT 
 
-jwt is stored in local storage of the browser it is named  as token. It contains some usefull infromation regarding the user and it's encrypted . So to decrypt that we need a special code 
+jwt is stored in local storage of the browser it is named  as token. It contains some usefull infromation regarding the user and it's encrypted . To decrypt that we need a special code 
 
 
 ### Routes specific arguments and return types
+#### /user
+- get request 
+-  Should pass user id in URL . We are sending a get request here
+    eg:- https://www.herokuappone.com/user/23hj23g41h2g3541
+- Should pass JWT in authentication header 
 
 
+#### /users
+- get request 
+- Should pass JWT in authentication header 
 
+#### /userLogin
+- post request 
+- Should pass email and password in JSON 
+  eg :- { "email":"aaa@a.com", "password":"bbb"}
+
+
+#### /userSignUp
+- post request 
+- Should pass following details  in JSON ->  name , district , email , password 
+  eg :- { "name":"Jhon " , "district" : "Kaluthara" , "email" : "aaa@a.com", "password" : "bbb" }
+- Returns a  JWT 
+
+
+#### /userUpdate
 
