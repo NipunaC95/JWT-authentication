@@ -19,6 +19,9 @@ router.post('/',(req,res,next)=>{
                                                         console.log(`Authentication success for : ${req.body.email}`)
                                                         const token = jwt.sign(user.toJSON(),JWT_SEACRET, { });
                                                         res.send({token});
+                                                }else{  
+                                                        console.log("Not matching");
+                                                        res.sendStatus(400);
                                                 }
                                         }
                                 });
