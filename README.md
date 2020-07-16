@@ -22,17 +22,13 @@ node server
           -'/userUpdate' - used to update details of a  registered user, Should pass JWT under authentication header
           -'/userDelete' - used to delete details of a  registered user, Should pass JWT under authentication header
 
-## About JWT 
-
-jwt is stored in local storage of the browser it is named  as token. It contains some usefull infromation regarding the user and it's encrypted  . To decrypt that we need a special code 
-
-
+ 
 ### Routes specific arguments and return types
 #### /user
 - get request 
 -  Should pass user id in URL .
     eg:- https://www.herokuappone.com/user/23hj23g41h2g3541
-- Should pass JWT in authentication header 
+- Should pass JWT in the authentication header 
 
 
 #### /users
