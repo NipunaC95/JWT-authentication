@@ -1,4 +1,8 @@
-# IdeaBrain - Login server
+# Introduction
+
+JWT is a mechanism to verify the owner of some JSON data. It’s an encoded string, which is URL safe, that can contain an unlimited amount of data (unlike a cookie), and it’s cryptographically signed.
+
+In this API after a user signed in or logged in, the user receives a   JWT then the user can access other routes by providing that JWT. 
  
 ## Development setup
 
@@ -20,7 +24,7 @@ node server
 
 ## About JWT 
 
-jwt is stored in local storage of the browser it is named  as token. It contains some usefull infromation regarding the user and it's encrypted . To decrypt that we need a special code 
+jwt is stored in local storage of the browser it is named  as token. It contains some usefull infromation regarding the user and it's encrypted  . To decrypt that we need a special code 
 
 
 ### Routes specific arguments and return types
