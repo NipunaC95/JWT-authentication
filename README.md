@@ -1,8 +1,5 @@
 # IdeaBrain - Login server
  
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)   [![License](https://img.shields.io/badge/color-Beerware-blue.svg)](https://en.wikipedia.org/wiki/Beerware) 
-
-
 ## Development setup
 
 ```sh
